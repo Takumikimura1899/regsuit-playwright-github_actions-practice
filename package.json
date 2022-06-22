@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "e2e:all": "playwright test",
+    "e2e:chromium": "playwright test --project=chromium",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
