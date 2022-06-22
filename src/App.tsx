@@ -9,9 +9,13 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>{count}</p>
+        <p data-testid='count'>{count}</p>
         <p>
-          <button type='button' onClick={() => setCount((count) => count + 1)}>
+          <button
+            type='button'
+            data-testid='count-up-button'
+            onClick={() => setCount((count) => count + 1)}
+          >
             count up
           </button>
         </p>
